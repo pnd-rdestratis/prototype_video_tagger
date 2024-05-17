@@ -13,7 +13,9 @@ def main():
     tags_to_return = st.slider("Wieviele Tags sollen generiert werden?", min_value=5, max_value=50, value=20)
 
     if st.button('Tags generieren') and video_file is not None:
+
         with st.spinner('Videoanalyse...'):
+            st.write("Je nach Länge das Videos kann das 1 -2 Minuten dauern")
             # Save the uploaded file to a temporary file
             with NamedTemporaryFile(delete=False) as temp_video_file:
                 temp_video_file.write(video_file.read())
