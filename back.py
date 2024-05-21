@@ -47,6 +47,8 @@ def generate_tags(transcript,tags_to_return):
         - You are part of a function that is called multiple times, that's why you don't need to provide all the tags at once unless it is only 1 chunk.
         - The tags should reflect key themes, regions, or notable individuals mentioned in the text.
         - You need to provide it in German. Provide only relevant Words!
+        - It might happen that there are words in the transcript that are not actual German words, because the automatic transcription didn't get it right, in this case don't use this word as a tag 
+        - Only real words that exist in German can be tags
         Example Response:
         {{
           "tags": [
