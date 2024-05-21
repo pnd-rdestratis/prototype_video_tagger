@@ -15,7 +15,7 @@ def main():
     if st.button('Tags generieren') and video_file is not None:
 
         with st.spinner('Videoanalyse...'):
-            st.write("Je nach Länge das Videos kann das 1 -2 Minuten dauern")
+            st.write("Je nach Länge das Videos kann das ein paar Minuten dauern")
             # Save the uploaded file to a temporary file
             with NamedTemporaryFile(delete=False) as temp_video_file:
                 temp_video_file.write(video_file.read())
